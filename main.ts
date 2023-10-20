@@ -6,12 +6,13 @@
 */
 
 // variables
-let randomNumber1: number
+let randomNumber1: number = -1
+let randomNumber2: number = -1
 
 // setup
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    
+  randomNumber1 = randint(0, 99)
 })
