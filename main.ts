@@ -14,5 +14,7 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
+  basic.clearScreen()
   randomNumber1 = randint(0, 99)
+  basic.showString(('#1 :') + (randomNumber1).toString())
 })
