@@ -27,3 +27,19 @@ input.onButtonPressed(Button.B, function () {
   basic.pause(1000)
   basic.showIcon(IconNames.Happy)
 })
+
+input.onGesture(Gesture.Shake, function() {
+  basic.clearScreen()
+  if (randomNumber1 == null) {
+    basic.showString('#1 not picked')
+  }
+  if (randomNumber2 == null) {
+    basic.showString('#2 not picked')
+  }
+
+  if (randomNumber1 > randomNumber2) {
+    basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
+  } else {
+    basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
+  }
+})
