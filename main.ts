@@ -30,13 +30,13 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function() {
   basic.clearScreen()
-    if (randomNumber1 == null && randomNumber2 == null) {
+  if (randomNumber1 == null && randomNumber2 == null) {
     basic.showString('numbers not picked')
   } else {
-  if (randomNumber1 > randomNumber2) {
-    basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
-  } else {
-    basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
+    if (randomNumber1 > randomNumber2) {
+      basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
+    } else {
+      basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
   }
   }
   basic.pause(1000)
