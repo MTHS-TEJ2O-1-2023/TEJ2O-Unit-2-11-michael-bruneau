@@ -17,4 +17,13 @@ input.onButtonPressed(Button.A, function () {
   basic.clearScreen()
   randomNumber1 = randint(0, 99)
   basic.showString(('#1 :') + (randomNumber1).toString())
+  basic.showIcon(IconNames.Happy)
+})
+
+input.onButtonPressed(Button.B, function () {
+  basic.clearScreen()
+  randomNumber2 = randint(0, 99)
+  basic.showString(('#2 :') + (randomNumber2).toString())
+  basic.pause(1000)
+  basic.showIcon(IconNames.Happy)
 })
