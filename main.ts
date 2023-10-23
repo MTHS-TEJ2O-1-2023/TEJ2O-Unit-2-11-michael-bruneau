@@ -28,7 +28,7 @@ input.onButtonPressed(Button.B, function () {
   basic.showIcon(IconNames.Happy)
 })
 
-input.onGesture(Gesture.Shake, function() {
+input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
   if (randomNumber1 == null && randomNumber2 == null) {
     basic.showString('numbers not picked')
@@ -37,7 +37,7 @@ input.onGesture(Gesture.Shake, function() {
       basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
     } else {
       basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
-  }
+    }
   }
   basic.pause(1000)
   basic.showIcon(IconNames.Happy)
