@@ -6,8 +6,8 @@
 */
 
 // variables
-let randomNumber1: number = -1
-let randomNumber2: number = -1
+let randomNumber1: number = null
+let randomNumber2: number = null
 
 // setup
 basic.clearScreen()
@@ -30,16 +30,13 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function() {
   basic.clearScreen()
-  if (randomNumber1 == null) {
-    basic.showString('#1 not picked')
-  }
-  if (randomNumber2 == null) {
-    basic.showString('#2 not picked')
-  }
-
+    if (randomNumber1 == null && randomNumber2 == null) {
+    basic.showString('numbers not picked')
+  } else {
   if (randomNumber1 > randomNumber2) {
     basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
   } else {
     basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
+  }
   }
 })
