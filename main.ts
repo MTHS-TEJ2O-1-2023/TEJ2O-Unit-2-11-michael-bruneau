@@ -39,4 +39,6 @@ input.onGesture(Gesture.Shake, function() {
     basic.showString((randomNumber1).toString() + ('<') + (randomNumber2).toString())
   }
   }
+  basic.pause(1000)
+  basic.showIcon(IconNames.Happy)
 })
