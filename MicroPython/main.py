@@ -37,3 +37,5 @@ while True:
                 display.scroll(str(random_number1) + (">") + str(random_number2))
             else:
                 display.scroll(str(random_number1) + ("<") + str(random_number2))
+        sleep(1000)
+        display.show(Image.HAPPY)
