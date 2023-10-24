@@ -30,7 +30,7 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
-  if (randomNumber1 == null && randomNumber2 == null) {
+  if (randomNumber1 == null || randomNumber2 == null) {
     basic.showString('numbers not picked')
   } else {
     if (randomNumber1 > randomNumber2) {
