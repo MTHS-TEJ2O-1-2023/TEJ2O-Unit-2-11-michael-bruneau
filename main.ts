@@ -42,7 +42,7 @@ input.onGesture(Gesture.Shake, function () {
   if (randomNumber1 == null || randomNumber2 == null) {
     basic.showString('numbers not picked')
   } else {
-
+    
     // camparing both random numbers
     if (randomNumber1 > randomNumber2) {
       basic.showString((randomNumber1).toString() + ('>') + (randomNumber2).toString())
