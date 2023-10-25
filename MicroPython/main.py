@@ -28,9 +28,9 @@ while True:
         sleep(1000)
         display.show(Image.HAPPY)
 
-    if accelerometer.was_gesture('shake'):
+    if accelerometer.was_gesture("shake"):
         display.clear()
-        if random_number1 == -1 & random_number2 == -1:
+        if random_number1 == -1 or random_number2 == -1:
             display.scroll("numbers not picked")
         else:
             if random_number1 > random_number2:
